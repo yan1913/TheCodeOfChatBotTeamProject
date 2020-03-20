@@ -1,5 +1,4 @@
 ## My Code of ChatBot
-### Folio link for personal code in group project:https://github.coventry.ac.uk/pages/liaoy19/MyCodeOfChatBotTeamProject/
 ******************
 ### This repository stores my personal code for team projects.
 
