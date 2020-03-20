@@ -1,3 +1,6 @@
+## My Code of ChatBot
+### Folio link for personal code in group project:https://github.coventry.ac.uk/pages/liaoy19/MyCodeOfChatBotTeamProject/
+
 ### This repository stores my personal code for team projects.
 ********** 
 In the [outline](https://github.coventry.ac.uk/liaoy19/MyCode/tree/master/OutLine) folder is the overall framework of the functions at the beginning of the team project
