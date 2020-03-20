@@ -1,5 +1,5 @@
 ## My Code of ChatBot
-******************
+
 ### This repository stores my personal code for team projects.
 
 In the [outline](https://github.coventry.ac.uk/liaoy19/MyCode/tree/master/OutLine) folder is the overall framework of the functions at the beginning of the team project
