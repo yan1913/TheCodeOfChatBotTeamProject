@@ -25,5 +25,5 @@ The original member registration information is saved in the  [CSV file](https:/
 
 When you successfully sign up for a new user, you will be asked if you can get permission to use your phone number and will attempt to send a text message containing confirmation to that phone number. However, because the advanced API requires payment, the advanced function of the API for sending and receiving SMS cannot be enabled, that is, the mobile phone number without manual verification cannot be sent a confirmation message. The current verified mobile phone number is 7985571159,and the And the test result is
 
-<img src="MyCode/ChatBotPortfolios/ChatBotPortfoliosPictures/WechatIMG2.jpeg" />
+<img src="https://github.coventry.ac.uk/liaoy19/MyCode/blob/master/ChatBotPortfolios/ChatBotPortfoliosPictures/WechatIMG2.jpeg" style="zoom: 33%;" />
 
