@@ -1,0 +1,239 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Portfolio of Chatbot Team Project by liaoy19</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Portfolio of Chatbot Team Project</h1>
+        <p></p>
+
+        <p class="view"><a href="https://github.coventry.ac.uk/liaoy19/MyCodeOfChatBotTeamProject">View the Project on GitHub <small>liaoy19/MyCodeOfChatBotTeamProject</small></a></p>
+
+
+      </header>
+      <section>
+        
+  <h1>
+<a id="chatbot" class="anchor" href="#chatbot" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>ChatBot<h1></h1>
+</h1>
+## Project brief
+<p>Chatbots are computer programs that conduct conversations and are often designed to convincingly simulate the way humans behave as conversation partners. The <strong>fitness center chatbot</strong> is dedicated to using the NLTK feature to identify key words and help customers with simple authentication, registration information and sending a "successful registration" confirmation message, access to help information and booking services. In addition to professional customer service, the chatbot can answer daily greetings and non-professional questions about the weather or local times.</p>
+<p>The general structure information is shown in the figure below：</p>
+<p><img src="ChatBotPortfoliosPictures/%E6%88%AA%E5%B1%8F2020-03-1602.37.57.png" alt="avatar"></p>
+<h2>
+<a id="final-prototype" class="anchor" href="#final-prototype" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Final prototype</h2>
+<p>When you RUN the file of <a href="https://github.coventry.ac.uk/liaoy19/fitnessCenterChatBot/blob/master/project/liaoy19/Test.py">Test.py</a>, you can get many detail of the chatbot.</p>
+<p>In addition to providing normal chat (greeting, asking about vacation status, asking time, and weather) in addition to inquiry, this chat robot also provides registered accounts, login accounts, get fitness advice, get course schedules, get specific distances on the map, And team sports information.</p>
+<p>You can ask when the test file runs:
+what time is it now?
+How's the weather today?<br>
+I want to register/login.
+What is the class detail?</p>
+<p>Or you can ask for more information about sentences that contain keywords from the <a href="https://github.coventry.ac.uk/liaoy19/fitnessCenterChatBot/blob/master/project/liaoy19/Greeting.py">Greeting file</a>.</p>
+<h4>
+<a id="note" class="anchor" href="#note" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>note:</h4>
+<p>The original member registration information is saved in the  <a href="https://github.coventry.ac.uk/liaoy19/fitnessCenterChatBot/blob/master/project/liaoy19/marks_test.csv">CSV file</a>. If you want to test login you can use the information in the <a href="https://github.coventry.ac.uk/liaoy19/fitnessCenterChatBot/blob/master/project/liaoy19/marks_test.csv">CSV file</a>. The UserID and password are columns 2 and 3 in the CSV fil.</p>
+<p>When you successfully sign up for a new user, you will be asked if you can get permission to use your phone number and will attempt to send a text message containing confirmation to that phone number. However, because the advanced API requires payment, the advanced function of the API for sending and receiving SMS cannot be enabled, that is, the mobile phone number without manual verification cannot be sent a confirmation message. The current verified mobile phone number is 7985571159,and the And the test result is</p>
+<img src="ChatBotPortfoliosPictures/WechatIMG2.jpeg" alt="avatar">
+<div class="highlight highlight-source-python"><pre><span class="pl-k">&gt;&gt;</span><span class="pl-k">&gt;</span> hi
+May I <span class="pl-c1">help</span> you<span class="pl-ii">?</span>
+<span class="pl-k">&gt;&gt;</span><span class="pl-k">&gt;</span> hola
+What I can do <span class="pl-k">for</span> you<span class="pl-ii">?</span>
+<span class="pl-k">&gt;&gt;</span><span class="pl-k">&gt;</span> what time <span class="pl-k">is</span> it
+<span class="pl-c1">2020</span><span class="pl-k">-</span><span class="pl-c1">0<span class="pl-ii">3</span></span><span class="pl-k">-</span><span class="pl-c1">19</span> <span class="pl-c1">18</span>:<span class="pl-c1">46</span>:<span class="pl-c1">29</span>
+<span class="pl-k">&gt;&gt;</span><span class="pl-k">&gt;</span> how <span class="pl-k">is</span> the weather
+Enter city name : London
+ Temperature (<span class="pl-k">in</span> kelvin unit) <span class="pl-k">=</span> <span class="pl-c1">280.38</span>
+ atmospheric pressure (<span class="pl-k">in</span> hPa unit) <span class="pl-k">=</span> <span class="pl-c1">1026</span>
+ humidity (<span class="pl-k">in</span> percentage) <span class="pl-k">=</span> <span class="pl-c1">93</span>
+ description <span class="pl-k">=</span> light intensity drizzle
+<span class="pl-k">&gt;&gt;</span><span class="pl-k">&gt;</span> I wanna go to <span class="pl-k">class</span>
+sorry, you need login at first(Press <span class="pl-s"><span class="pl-pds">'</span>return<span class="pl-pds">'</span></span> to be <span class="pl-k">continue</span>)
+Please enter userID:Ann689
+Please enter your passwordQWEqwe456<span class="pl-ii">$$</span>
+Correct UserID.
+welcome!
+Here are some home workout videos to <span class="pl-k">try</span>.
+https:<span class="pl-k">//</span>www.youtube.com<span class="pl-k">/</span>results<span class="pl-ii">?</span>search_query<span class="pl-k">=</span>home<span class="pl-k">+</span>workout
+Welcome to the classes section, 
+we have various <span class="pl-c1">type</span> of classes, 
+which <span class="pl-k">class</span> would you like to join, 
+we have productive gym sessions, 
+different sports, dance classes 
+<span class="pl-k">and</span> also we have yoga classes, 
+Thankyou.(enter<span class="pl-s"><span class="pl-pds">'</span>gym<span class="pl-pds">'</span></span>)
+gym
+Would you like a personal gym trainer <span class="pl-k">or</span> join a group gym <span class="pl-k">class</span>.(enter <span class="pl-s"><span class="pl-pds">'</span>personal<span class="pl-pds">'</span></span>)
+persona<span class="pl-bu">;</span>
+what you said was <span class="pl-k">not</span> <span class="pl-k">in</span> the options, please chose again.(enter<span class="pl-s"><span class="pl-pds">'</span>dave,dominic,caro,fiona or craig<span class="pl-pds">'</span></span>)
+Would you like a personal gym trainer <span class="pl-k">or</span> join a group gym <span class="pl-k">class</span>.(enter <span class="pl-s"><span class="pl-pds">'</span>personal<span class="pl-pds">'</span></span>)
+personal
+These are the lists of personal trainers we have, 
+please use name to choose one below <span class="pl-k">and</span> proceed to payment.
+<span class="pl-k">&lt;</span>module <span class="pl-s"><span class="pl-pds">'</span>project.moham977.trainers<span class="pl-pds">'</span></span> <span class="pl-k">from</span> <span class="pl-s"><span class="pl-pds">'</span>/Users/liaoyan/PycharmProjects/chatBot/project/moham977/trainers.py<span class="pl-pds">'</span></span><span class="pl-k">&gt;</span>
+
+What you said was <span class="pl-k">not</span> <span class="pl-k">in</span> the <span class="pl-c1">list</span>, 
+please check the spelling of the name <span class="pl-k">and</span> <span class="pl-c1">type</span> again.
+(enter<span class="pl-s"><span class="pl-pds">'</span>dave,dominic,caro,fiona or craig<span class="pl-pds">'</span></span>)
+dave
+<span class="pl-k">&lt;</span>Response [<span class="pl-c1">200</span>]<span class="pl-k">&gt;</span>
+The price <span class="pl-k">is</span> £<span class="pl-c1">50</span>
+please call dave.
+If you wanna get more information about group exercises,please enter something about <span class="pl-s"><span class="pl-pds">'</span>group<span class="pl-pds">'</span></span>.
+<span class="pl-k">&gt;&gt;</span><span class="pl-k">&gt;</span> group
+sorry, you need login at first
+Please enter userID:
+Please enter your password
+your password <span class="pl-k">or</span> UserID <span class="pl-k">is</span> <span class="pl-k">not</span> valid, please <span class="pl-k">try</span> again,
+<span class="pl-k">if</span> you wanna <span class="pl-c1">exit</span> the login system,please enter<span class="pl-s"><span class="pl-pds">"</span>No<span class="pl-pds">"</span></span>,<span class="pl-k">if</span> you wanna login again,
+please press <span class="pl-s"><span class="pl-pds">"</span>return<span class="pl-pds">"</span></span> to be continueNo
+Please <span class="pl-k">try</span> typing <span class="pl-s"><span class="pl-pds">'</span>login<span class="pl-pds">'</span></span>
+<span class="pl-c1">PLEASE</span> <span class="pl-c1">ENTER</span> <span class="pl-c1">YOUR</span> GENDER(<span class="pl-k">if</span> you wanna <span class="pl-c1">quit</span>,please enter No):No
+<span class="pl-k">&gt;&gt;</span><span class="pl-k">&gt;</span> I wanna register
+<span class="pl-k">========</span><span class="pl-k">=</span><span class="pl-c1">REGISTER</span><span class="pl-k">========</span><span class="pl-k">=</span>
+Enter your Username:abc
+Enter your password:<span class="pl-c1">123</span>
+What <span class="pl-k">is</span> your gender:F
+How old are you:<span class="pl-c1">23</span>
+please enter your weight(kg):<span class="pl-c1">80</span>
+please enter your height:<span class="pl-c1">1.8</span>
+Not Valid! The password should contain at least two characters of a<span class="pl-k">-</span>z
+<span class="pl-c1">False</span>
+please reset the password abc123
+registration was successful
+<span class="pl-k">==============</span>your detail<span class="pl-k">==============</span>
+username: abc
+gander: F
+age: <span class="pl-c1">23</span>
+weight: <span class="pl-c1">80.0</span>
+height: <span class="pl-c1">1.8</span>
+<span class="pl-k">======================================</span><span class="pl-k">=</span>
+Would you like to receive more relevant information via <span class="pl-c1">SMS</span><span class="pl-ii">?</span>(yes<span class="pl-k">/</span>no)yes
+Please enter your phone number7985571159
+SMa2883f38fca34c168f864f5956386fec
+Do you want to calculate your <span class="pl-c1">BMI</span> <span class="pl-k">and</span> your health condition(yes<span class="pl-k">/</span>no):yes
+Your health result
+<span class="pl-c1">BMI</span>: <span class="pl-c1">24.691358024691358</span>
+Normal (healthy weight)	
+<span class="pl-k">======================================</span><span class="pl-k">=</span>
+What I can do <span class="pl-k">for</span> you<span class="pl-ii">?</span>
+Do you want get some information about the <span class="pl-k">class</span> <span class="pl-k">or</span> group exercises<span class="pl-ii">?</span>(yes<span class="pl-k">/</span>no)yes
+Here are some home workout videos to <span class="pl-k">try</span>.
+https:<span class="pl-k">//</span>www.youtube.com<span class="pl-k">/</span>results<span class="pl-ii">?</span>search_query<span class="pl-k">=</span>home<span class="pl-k">+</span>workout
+Thanks <span class="pl-k">for</span> coming to our classes section. 
+What section would you like to join today 
+we have amazing gym training classes, 
+different varieties of sports, 
+dances classes <span class="pl-k">and</span> yoga classes also, 
+Thankyou.(enter<span class="pl-s"><span class="pl-pds">'</span>gym<span class="pl-pds">'</span></span>)
+gym
+Would you like a personal gym trainer <span class="pl-k">or</span> join a group gym <span class="pl-k">class</span>.(enter <span class="pl-s"><span class="pl-pds">'</span>personal<span class="pl-pds">'</span></span>)
+personal
+These are the lists of personal trainers we have, 
+please use name to choose one below <span class="pl-k">and</span> proceed to payment.
+<span class="pl-k">&lt;</span>module <span class="pl-s"><span class="pl-pds">'</span>project.moham977.trainers<span class="pl-pds">'</span></span> <span class="pl-k">from</span> <span class="pl-s"><span class="pl-pds">'</span>/Users/liaoyan/PycharmProjects/chatBot/project/moham977/trainers.py<span class="pl-pds">'</span></span><span class="pl-k">&gt;</span>
+
+What you said was <span class="pl-k">not</span> <span class="pl-k">in</span> the <span class="pl-c1">list</span>, 
+please check the spelling of the name <span class="pl-k">and</span> <span class="pl-c1">type</span> again.
+(enter<span class="pl-s"><span class="pl-pds">'</span>dave,dominic,caro,fiona or craig<span class="pl-pds">'</span></span>)
+dominic
+<span class="pl-k">&lt;</span>Response [<span class="pl-c1">200</span>]<span class="pl-k">&gt;</span>
+The price <span class="pl-k">is</span> £<span class="pl-c1">30</span>
+If you wanna get more information about group exercises,please enter something about <span class="pl-s"><span class="pl-pds">'</span>group<span class="pl-pds">'</span></span>.
+<span class="pl-k">&gt;&gt;</span><span class="pl-k">&gt;</span> group
+
+sorry, you need login at firstPlease enter userID:Ann689
+Please enter your passwordQWEqwe456<span class="pl-ii">$$</span>
+Correct UserID.
+welcome!
+<span class="pl-c1">PLEASE</span> <span class="pl-c1">ENTER</span> <span class="pl-c1">YOUR</span> GENDER(<span class="pl-k">if</span> you wanna <span class="pl-c1">quit</span>,please enter No):male
+crunches <span class="pl-ii">3pm</span> daily <span class="pl-k">and</span> weightlifting <span class="pl-ii">5pm</span> daily <span class="pl-k">is</span> avaliable
+<span class="pl-c1">PLEASE</span> <span class="pl-c1">ENTER</span> <span class="pl-c1">YOUR</span> GENDER(<span class="pl-k">if</span> you wanna <span class="pl-c1">quit</span>,please enter No):No
+<span class="pl-c1">PLEASE</span> <span class="pl-c1">ENTER</span> <span class="pl-c1">YOUR</span> GENDER(<span class="pl-k">if</span> you wanna <span class="pl-c1">quit</span>,please enter No):No
+<span class="pl-k">&gt;&gt;</span><span class="pl-k">&gt;</span> where <span class="pl-k">is</span> the address
+Please enter your telephone number7985571159
+Correct Phone Number.
+The distance between your home <span class="pl-k">and</span> Coventry Sport <span class="pl-k">and</span> Leisure Center <span class="pl-k">is</span>: <span class="pl-c1">0.226</span> mile
+<span class="pl-k">&gt;&gt;</span><span class="pl-k">&gt;</span> bye
+Thank you <span class="pl-k">for</span> using it.Have a good day
+</pre></div>
+<h2>
+<a id="my-contributions" class="anchor" href="#my-contributions" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>My contributions</h2>
+<ol>
+<li>
+<p>Next, I will elaborate on what I have accomplished in the project through the completion process:</p>
+<ol>
+<li>
+<p>At the very beginning of the project, I wrote the tree structure (<strong>xMind</strong>) needed for the project, as well as the functional framework and <a href="https://github.coventry.ac.uk/liaoy19/MyCode/tree/master/OutLine">outline documend</a> . And inform team members to select and complete the functions they are interested in.</p>
+</li>
+<li>
+<p>completed the use of NLTK methods to filter and filter the keywords of user input, and completed the general testing framework. Use NLTK to complete the initial greeting and randomly output the reply to the actual situation. Even if the same question is asked in succession, there will be different responses at random, which makes liantian robot more interesting.I used the tool on the <strong>Test.py</strong> file.</p>
+</li>
+<li>
+<p>Calculate the function of BMI. BMI results were obtained through the input of user information (increase and weight), and the status assessment of primary users was conducted, which laid a foundation for the follow-up group members to complete the function of fitness suggestion(<strong>BIMdemo.py</strong>).</p>
+</li>
+<li>
+<p>Registration(<strong>Register.py</strong>). I created the get and set methods in an object-oriented way to allow users to register according to the rules. And I wrapped and designed the get and set methods in the property style to make it easier to call them.</p>
+</li>
+<li>
+<p>Calculate the function of BMI. BMI results were obtained through the input of user information (increase and weight), and the status assessment of primary users was conducted, (<strong>BIMdemo.py</strong>).</p>
+</li>
+<li>
+<p>Complete the API function on obtaining the weather content(<strong>Weather.py</strong>). When the user enters a question about the weather, the user is prompted to enter the name of the city, then gets the information from the Internet through the API and outputs it.</p>
+</li>
+<li>
+<p>Complete the fetch time method(<strong>Time.py</strong>). When the user enters a time-related question, the "time" keyword is automatically captured, then the system time is read and output in the format of year - month - day - hour - minute - second.</p>
+</li>
+<li>
+<p>Group project testing procedures(<strong>Test.py</strong>). To make the code look clean and tidy,  I created a new file called test.py,to make the code look clean and tidy. The test.py file imported all the method files , organize all the functional structures, and finally integrate all the functions together. I also spent a fair amount of time and effort debugging the entire project code .</p>
+</li>
+<li>
+<p>I helped the team members adapt about 70% of their groupexercise.py (the variable names and values were still his original ideas) to make it work.I also finished the chatbot's <strong>README.md</strong> file</p>
+</li>
+</ol>
+</li>
+</ol>
+<h2>
+<a id="skills-developed" class="anchor" href="#skills-developed" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Skills developed</h2>
+<p>Through this chatbot group project, I encountered many challenges and gains, which played an obvious role in the improvement and development of personal ability.</p>
+<ol>
+<li>
+<p>I understand the complete and detailed project structure and accurate, detailed and effective communication with team members can make the progress of team projects more accurate and efficient. Assigning tasks based on capabilities is also an important part of group projects.</p>
+</li>
+<li>
+<p>Basic Python syntax exercises. I have become more proficient in the basic grammar of python and can consolidate the basic python grammar knowledge that I learned in class.</p>
+</li>
+<li>
+<p>Learn to use NLTK natural language processing tools. After learning to use the NLTK tool, the recognition rate and accuracy rate of the code for the keywords entered by the user are greatly improved.</p>
+</li>
+<li>
+<p>Learn about object-oriented. While writing an article about user registration, I found that the simple basic code in the classroom was not enough to achieve what I wanted. Then I found out that object-oriented knowledge to create basic properties and functions can solve this problem. To make the created properties easier to call, I added get and set methods to them. Changes can be made and are easy to read.</p>
+</li>
+<li>
+<p>Learned about the application and use of different apis. Simple native code features are limited, the amount of information and output is not enough to support a complete chatbot system. Using apis such as weather and SMS can enrich the chatbot's functions. Through the use of the API, I know the interoperability between the code.</p>
+</li>
+</ol>
+<h2>
+<a id="conclusion" class="anchor" href="#conclusion" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>conclusion</h2>
+<p>This group project allowed me to learn a lot of new knowledge, and enough practice to understand the code more fully. At the same time, I got a sense of achievement. I think my work content accounts for the majority of the group project. In addition to completing registration, calculating BMI, obtaining system time and functions, different functions of API were added, including sending short messages and obtaining weather information, which made the whole project more rich. The other thing that I thought was really important was that I did all the code synthesis for the team members on my own. Combining code sounds simple, but this part of the work is the most time-consuming and exhausting. The work includes but is not limited to designing code framework, assigning code work, unifying code style, and supervising code completion. And in the process of combining the code together, it is necessary to fully understand the logic of the code written by the partner and make some modifications to ensure that the code can be combined and run correctly. Everyone's code level and style is different, which makes this very difficult. Happily, however, I accomplished this difficult task.</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.coventry.ac.uk/liaoy19">liaoy19</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
